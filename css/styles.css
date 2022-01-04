@@ -526,7 +526,7 @@ img {
   color: var(--background-color);
 }
 /* -----------------------Gallery---------------------- */
-.portfolio-filter-list-button {
+.portfolio-filter-list-button:not(:last-child) {
   margin-right: 8px;
 }
 
