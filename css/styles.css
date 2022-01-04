@@ -88,11 +88,11 @@ img {
 .header .logo {
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .logo {
   display: block;
-  margin-right: 93px;
 
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
