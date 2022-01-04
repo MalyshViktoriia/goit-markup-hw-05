@@ -263,6 +263,31 @@ img {
   margin-top: 30px;
 }
 
+.work-thumb {
+  position: relative;
+}
+
+.work-thumb-bg {
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-thumb-text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--background-color);
+}
+
 /* ----------------Section-command-------------- */
 .command-list {
   display: flex;
