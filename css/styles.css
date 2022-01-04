@@ -136,12 +136,32 @@ img {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+
+  position: relative;
 }
 
 .nav-link:hover,
 .nav-link:focus,
 .current {
   color: var(--accent-color);
+}
+
+.studio-line::after {
+  content: '';
+  height: 4px;
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: 0;
+  width: 48px;
+}
+
+.portfolio-line::after {
+  content: '';
+  height: 4px;
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: 0;
+  width: 78px;
 }
 
 .contact-icon {
@@ -214,10 +234,6 @@ img {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-}
-
-.feature-list-item:nth-child(4) {
-  margin-right: 0;
 }
 
 .feature-title {
