@@ -575,3 +575,81 @@ img {
   line-height: calc(30 / 16);
   color: var(--optional-text-color);
 }
+
+.portfolio-img {
+  position: relative;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.portfolio-overlay:hover,
+.portfolio-overlay:focus {
+  opacity: 1;
+}
+.portfolio-overlay-text {
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: var(--background-color);
+
+  padding: 63px 24px;
+}
+
+/* BACKDROP */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  width: 528px;
+  height: 581px;
+  background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 8px;
+  margin-top: 8px;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  background-color: var(--background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-button-icon {
+  fill: currentColor;
+}
